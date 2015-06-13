@@ -5,7 +5,7 @@ BigEyeBlue::BigEyeBlue() :BigEyeRed()
 	LoadSprite(MyResources::GetInstance().sBigEyeBlue);
 	objectType = GameObjectType::o_BIGEYEBLUE;
 	SetStatus(BigEyeStatus::BigEyeOnGround);
-	renderOrder = 2;
+	renderOrder = 4;
 	isAlive = true;
 	SetFrameRate(20);
 

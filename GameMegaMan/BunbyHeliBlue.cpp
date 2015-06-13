@@ -4,10 +4,10 @@ BunbyHeliBlue::BunbyHeliBlue() :GameObj()
 {
 	LoadSprite(MyResources::GetInstance().sBunbyHeliBlue);
 	objectType = GameObjectType::o_BUNBYHELIBLUE;
-	//SetStatus(0);			//Set status for render
 	SetStatus(BunbyHeliStatus::BunbyHeliNormal);	//Set status for behavior
-	renderOrder = 3;
+	renderOrder = 4;
 	SetFrameRate(20);
+
 	//////////////////////////////////////////////////////////////////////////
 	o_maxVelocityX = 120;
 	o_maxVelocityY = 100;
@@ -15,6 +15,10 @@ BunbyHeliBlue::BunbyHeliBlue() :GameObj()
 	o_defAccelerationY = -1500;
 	flDefaultMaxRange = 60;
 	e_flAttackTime = 0;
+
+	//////////////////////////////////////////////////////////////////////////
+	o_damage = 3;
+	o_health = 1;
 }
 
 BunbyHeliBlue::~BunbyHeliBlue()

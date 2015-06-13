@@ -15,6 +15,10 @@ BouncingMushroomRed::BouncingMushroomRed() : BouncingMushroomBlue()
 	o_maxVelocityY = 330;
 	e_timeWaitToJump = 0.0;
 	accelerationY = o_defAccelerationY;
+
+	//////////////////////////////////////////////////////////////////////////
+	o_damage = 2;
+	o_health = 1;
 }
 
 

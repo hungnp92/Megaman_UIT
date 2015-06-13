@@ -15,6 +15,10 @@ BouncingMushroomBlue::BouncingMushroomBlue() : GameObj()
 	o_maxVelocityY = 350;
 	e_timeWaitToJump = 0.0;
 	accelerationY = o_defAccelerationY;
+
+	//////////////////////////////////////////////////////////////////////////
+	o_damage = 2;
+	o_health = 1;
 }
 
 
