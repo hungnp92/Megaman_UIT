@@ -6,12 +6,10 @@ BigEyeBlue::BigEyeBlue() :BigEyeRed()
 	objectType = GameObjectType::o_BIGEYEBLUE;
 	SetStatus(BigEyeStatus::BigEyeOnGround);
 	renderOrder = 4;
-	isAlive = true;
 	SetFrameRate(20);
 
 	//////////////////////////////////////////////////////////////////////////
 	o_defAccelerationX = 0;
-	o_defAccelerationY = -1000;
 	o_maxVelocityX = 60;
 	o_maxVelocityY = 280;
 	e_timeWaitToJump = 0.0;

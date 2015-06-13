@@ -1,6 +1,6 @@
 #pragma once
-#include "GameObj.h"
-class SuzyOrange :public GameObj
+#include "SuzyRed.h"
+class SuzyOrange :public SuzyRed
 {
 public:
 	SuzyOrange();

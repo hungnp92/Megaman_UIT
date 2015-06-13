@@ -267,7 +267,8 @@ void MyResources::LoadResources()
 
 	sSuzyRed = new Sprite();
 	sSuzyRed->LoadSprite(DxMngr::GetInstance().GetTextureFromBitmap("Resources/Images/enemies/SuzyRed.png", NULL));
-	sSuzyRed->AddStatus(SpriteStatus(3, 16, 16, 0));
+	sSuzyRed->AddStatus(SpriteStatus(static_cast<int>(SuzyStatus::SuzyNormal), 1, 16, 16, 0));
+	sSuzyRed->AddStatus(SpriteStatus(static_cast<int>(SuzyStatus::SuzyAttack), 2, 16, 16, 16));
 
 	sSuzyOrange = new Sprite();
 	sSuzyOrange->LoadSprite(DxMngr::GetInstance().GetTextureFromBitmap("Resources/Images/enemies/SuzyOrange.png", NULL));

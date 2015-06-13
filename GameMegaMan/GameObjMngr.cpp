@@ -104,12 +104,15 @@ GameObj* GameObjMngr::CreateGameObject(GameObjectType type, float posX, float po
 		break;
 	case o_SUZYBLUE:
 		obj = new SuzyBlue();
+		dynamic_cast<SuzyBlue*>(obj)->SetDirection(state != 0);
 		break;
 	case o_SUZYRED:
 		obj = new SuzyRed();
+		dynamic_cast<SuzyRed*>(obj)->SetDirection(state != 0);
 		break;
 	case o_SUZYORANGE:
 		obj = new SuzyOrange();
+		dynamic_cast<SuzyOrange*>(obj)->SetDirection(state != 0);
 		break;
 	case o_SCREWDRIVERORANGE:
 		obj = new ScrewDriverOrange();
