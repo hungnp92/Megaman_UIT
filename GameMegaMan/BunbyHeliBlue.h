@@ -1,0 +1,37 @@
+#pragma once
+#include "GameObj.h"
+
+class BunbyHeliBlue :public GameObj
+{
+public:
+	//////////////////////////////////////////////////////////////////////////
+	//Variable
+	BunbyHeliStatus status;
+	float flDefaultMaxRange;
+
+	//////////////////////////////////////////////////////////////////////////
+	//Time
+	float e_detaTime;
+	float e_flAttackTime;	//Default attack times
+
+	void SetStatus(BunbyHeliStatus _status);
+	//////////////////////////////////////////////////////////////////////////
+	//Operation
+	BunbyHeliBlue();
+	~BunbyHeliBlue();
+
+	//////////////////////////////////////////////////////////////////////////
+	//FUNCTION
+	void Update(float _delta) override;
+	void AIControl(float _targetX, float _targetY) override;
+	
+	//////////////////////////////////////////////////////////////////////////
+	//Behavior
+	//Moving
+	//Value: true - right & false - left
+	void Moving(bool _direction);
+
+	//Swing
+	void SwingToTarget(float tarX, float tarY);
+};
+

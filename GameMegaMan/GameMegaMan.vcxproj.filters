@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\GameObject">
+      <UniqueIdentifier>{1fd81890-ef99-4e42-a623-800ad09ff75c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObject\Enermy">
+      <UniqueIdentifier>{0c6700e3-9d6c-45a6-bb6c-d8fa05ccdb6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObject\Boss">
+      <UniqueIdentifier>{63d44536-7f4c-49db-b78c-cc7f23059adc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework">
+      <UniqueIdentifier>{6f8c300b-f604-44d1-b2c8-363c9f8ddfc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework\CollisionManager">
+      <UniqueIdentifier>{a9996805-21bc-4e28-87f1-24e159657286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameLogic">
+      <UniqueIdentifier>{e4f30bac-ac71-4d35-99fe-ce88037ac2a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObject\Rockman">
+      <UniqueIdentifier>{66d24166-f04e-427e-b140-5fe99f437e44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObject">
+      <UniqueIdentifier>{7ab19668-dbea-4417-be26-38e4146aba3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObject\Rockman">
+      <UniqueIdentifier>{987abd3c-ba33-4f5f-9b30-d84d33679934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObject\Boss">
+      <UniqueIdentifier>{a2e7f07b-e92e-49df-89fa-c228fc0aa519}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObject\Enermy">
+      <UniqueIdentifier>{0a4deabb-7fcb-4acd-af83-4c3cbb9abe79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework">
+      <UniqueIdentifier>{27aebece-99e2-4e7b-bcea-37b26be6b4c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameLogic">
+      <UniqueIdentifier>{f9a448b5-b264-4d06-aab3-5125089b01bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework\CollisionManager">
+      <UniqueIdentifier>{575142d7-c1c2-46ad-9960-2fec42027cdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework\Sprite">
+      <UniqueIdentifier>{84844230-2b8f-48cb-ab10-acbc38599a5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework\Sprite">
+      <UniqueIdentifier>{db5f9088-21f9-49e5-8e92-c23f576f42d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObject\Bullet">
+      <UniqueIdentifier>{95c8aa8f-f327-4bb5-ba3c-6c8ab613a665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObject\Bullet">
+      <UniqueIdentifier>{e8d964d5-104c-4f57-a7f4-7915b16cdb9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObject\Item">
+      <UniqueIdentifier>{d96bc246-e6e4-416f-b0d0-e5db940b6f13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObject\Item">
+      <UniqueIdentifier>{e4dc173c-e5c8-4076-9949-5c5fb4f36dbb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BigEyeBlue.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="BigEyeRed.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="BlasterBlue.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="BlasterOrange.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="BlasterRed.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="BunbyHeliBlue.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="BunbyHeliGreen.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionMngr.cpp">
+      <Filter>Source Files\Framework\CollisionManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CrazyRazyFoot.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="CrazyRazy.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="CrazyRazyBody.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="Changkey.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="DxMngr.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="DiMngr.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="FootHolderGreen.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="FootHolderOrange.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="GabyoallBlue.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="GabyoallOrange.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="GabyoallRed.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="KillerBombBlue.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="KillerBombOrange.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="KillerBombRed.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="Mambu.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="Pepe.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="Metall.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="RockMan.cpp">
+      <Filter>Source Files\GameObject\Rockman</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroStage.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuStage.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="SniperJoe.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrewDriverBlue.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrewDriverOrange.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrewDriverRed.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="SuzyRed.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperCutter.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="SuzyBlue.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="SuzyOrange.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="Watcher.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewPort.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml2.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="BomMan.cpp">
+      <Filter>Source Files\GameObject\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="CutMan.cpp">
+      <Filter>Source Files\GameObject\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="ElecMan.cpp">
+      <Filter>Source Files\GameObject\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="PicketMan.cpp">
+      <Filter>Source Files\GameObject\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Source Files\Framework\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteStatus.cpp">
+      <Filter>Source Files\Framework\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterTitle.cpp">
+      <Filter>Source Files\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameString.cpp">
+      <Filter>Source Files\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObj.cpp">
+      <Filter>Source Files\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="BackgroundTitle.cpp">
+      <Filter>Source Files\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadNode.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayStage.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="Brick.cpp">
+      <Filter>Source Files\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticGameObj.cpp">
+      <Filter>Source Files\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuObject.cpp">
+      <Filter>Source Files\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameRect.cpp">
+      <Filter>Source Files\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjMngr.cpp">
+      <Filter>Source Files\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="WelcomeStage.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletObj.cpp">
+      <Filter>Source Files\GameObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="BlueBullet.cpp">
+      <Filter>Source Files\GameObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="GreenBullet.cpp">
+      <Filter>Source Files\GameObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="OrangeBullet.cpp">
+      <Filter>Source Files\GameObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="RedBullet.cpp">
+      <Filter>Source Files\GameObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemObj.cpp">
+      <Filter>Source Files\GameObject\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="BouncingMushroomRed.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="BouncingMushroomBlue.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BigEyeBlue.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="BigEyeRed.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="BlasterBlue.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="BlasterOrange.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="BlasterRed.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="BomMan.h">
+      <Filter>Header Files\GameObject\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="BunbyHeliBlue.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="BunbyHeliGreen.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="Changkey.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="CrazyRazyFoot.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="CrazyRazy.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="CrazyRazyBody.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="CutMan.h">
+      <Filter>Header Files\GameObject\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="DiMngr.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="DxMngr.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="ElecMan.h">
+      <Filter>Header Files\GameObject\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="FootHolderGreen.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="FootHolderOrange.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="GabyoallBlue.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="GabyoallOrange.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="GabyoallRed.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObj.h">
+      <Filter>Header Files\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroStage.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="KillerBombBlue.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="KillerBombOrange.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="KillerBombRed.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="Mambu.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuStage.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Metall.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="PicketMan.h">
+      <Filter>Header Files\GameObject\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="Watcher.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="SuzyRed.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="SuzyOrange.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="SuzyBlue.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperCutter.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="SniperJoe.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrewDriverRed.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrewDriverOrange.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrewDriverBlue.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="Pepe.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="RockMan.h">
+      <Filter>Header Files\GameObject\Rockman</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewPort.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml2.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionMngr.h">
+      <Filter>Header Files\Framework\CollisionManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files\Framework\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteStatus.h">
+      <Filter>Header Files\Framework\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="GameString.h">
+      <Filter>Header Files\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterTitle.h">
+      <Filter>Header Files\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundTitle.h">
+      <Filter>Header Files\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadNode.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjMngr.h">
+      <Filter>Header Files\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayStage.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Brick.h">
+      <Filter>Header Files\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticGameObj.h">
+      <Filter>Header Files\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuObject.h">
+      <Filter>Header Files\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameRect.h">
+      <Filter>Header Files\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="WelcomeStage.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletObj.h">
+      <Filter>Header Files\GameObject\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="BlueBullet.h">
+      <Filter>Header Files\GameObject\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="RedBullet.h">
+      <Filter>Header Files\GameObject\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="GreenBullet.h">
+      <Filter>Header Files\GameObject\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="OrangeBullet.h">
+      <Filter>Header Files\GameObject\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemObj.h">
+      <Filter>Header Files\GameObject\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="BouncingMushroomBlue.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="BouncingMushroomRed.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

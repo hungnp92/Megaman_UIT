@@ -1,0 +1,50 @@
+#pragma once
+#include "BackgroundTitle.h"
+#include "BigEyeBlue.h"
+#include "BigEyeRed.h"
+#include "BlasterBlue.h"
+#include "BlasterOrange.h"
+#include "BlasterRed.h"
+#include "BomMan.h"
+#include "BunbyHeliBlue.h"
+#include "BunbyHeliGreen.h"
+#include "Changkey.h"
+#include "CrazyRazy.h"
+#include "CrazyRazyBody.h"
+#include "CrazyRazyFoot.h"
+#include "CutMan.h"
+#include "ElecMan.h"
+#include "FootHolderGreen.h"
+#include "FootHolderOrange.h"
+#include "GabyoallBlue.h"
+#include "GabyoallOrange.h"
+#include "GabyoallRed.h"
+#include "KillerBombBlue.h"
+#include "KillerBombOrange.h"
+#include "KillerBombRed.h"
+#include "Mambu.h"
+#include "Metall.h"
+#include "Pepe.h"
+#include "PicketMan.h"
+#include "RockMan.h"
+#include "ScrewDriverBlue.h"
+#include "ScrewDriverOrange.h"
+#include "ScrewDriverRed.h"
+#include "SniperJoe.h"
+#include "SuperCutter.h"
+#include "SuzyBlue.h"
+#include "SuzyOrange.h"
+#include "SuzyRed.h"
+#include "Watcher.h"
+#include "Brick.h"
+#include "BulletObj.h"
+#include "BouncingMushroomBlue.h"
+#include "BouncingMushroomRed.h"
+
+class GameObjMngr
+{
+public:
+	GameObjMngr();
+	~GameObjMngr();
+	static GameObj* CreateGameObject(GameObjectType _type, float _posX, float _posY, int _width, int _height, int _state);
+};
