@@ -58,7 +58,6 @@ void BunbyHeliBlue::Update(float _delta)
 //AIControl
 void BunbyHeliBlue::AIControl(float _targetX, float _targetY)
 {
-	//float fldistance = 50;
 	if ((abs(positionX - _targetX) <= flDefaultMaxRange) && status == BunbyHeliStatus::BunbyHeliNormal)
 	{
 		SwingToTarget(_targetX, _targetY);
@@ -67,15 +66,6 @@ void BunbyHeliBlue::AIControl(float _targetX, float _targetY)
 	if (status == BunbyHeliStatus::BunbyHeliNormal)
 	{
 		Moving(positionX < _targetX);
-		//if ()
-		//{
-		//	Moving(false);	//Move to the left
-		//}
-		//else
-		//{
-		//	Moving(true);	//Move to the right
-		//}
-
 	}
 	
 }

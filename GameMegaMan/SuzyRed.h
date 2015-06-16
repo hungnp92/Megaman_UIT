@@ -9,8 +9,8 @@ public:
 	float		e_WaitTimeToFly;
 	bool		e_Direction;			//true - horizontal & false - vertical
 	bool		e_OnWall;				//true - on wall(normal) & false - on air(attack)
-	float		e_NextVelocityX, e_NextVelocityY;	//next velocity
-	float		e_delta;
+	bool		e_PreviousMove;			//previous moving direction 
+	float		e_delta;				//Use this delta for AIControl
 	//////////////////////////////////////////////////////////////////////////
 	//FUNCTION
 	SuzyRed();
@@ -32,7 +32,7 @@ public:
 	
 	//FlyTo
 	//_direction value: true - horizontal & false - vertical
-	void Fly(bool _direction, bool _changeMove);
+	void Fly(bool _direction, bool _preMove);
 
 	//Stop
 	void Stop();

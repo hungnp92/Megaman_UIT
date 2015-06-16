@@ -206,6 +206,7 @@ void GameObj::SetStatus(int _status)
 			SetDimension(s.frameWidth, s.frameHeight);
 			frameCount = s.frameCount;
 			currentFrame = 0;
+			o_updateTime = 0;
 		}
 	}
 }

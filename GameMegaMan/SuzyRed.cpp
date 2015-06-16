@@ -4,9 +4,9 @@ SuzyRed::SuzyRed() : GameObj()
 {
 	objectType = GameObjectType::o_SUZYRED;
 	LoadSprite(MyResources::GetInstance().sSuzyRed);
-	SetStatus(SuzyStatus::SuzyNormal);
+	SetStatus(SuzyStatus::SuzyAttack);
 	renderOrder = 4;
-	SetFrameRate(20);
+	SetFrameRate(15);
 
 	//////////////////////////////////////////////////////////////////////////
 	o_defAccelerationX = 0;
@@ -15,10 +15,14 @@ SuzyRed::SuzyRed() : GameObj()
 	o_maxVelocityY = 100;
 	e_WaitTimeToFly = 0.0;
 	accelerationY = o_defAccelerationY;
+	e_OnWall = true;
 
 	//////////////////////////////////////////////////////////////////////////
 	o_damage = 4;
 	o_health = 5;
+
+	//////////////////////////////////////////////////////////////////////////
+	
 }
 
 SuzyRed::~SuzyRed()
@@ -30,11 +34,23 @@ void SuzyRed::SetStatus(SuzyStatus _status)
 {
 	status = _status;
 	GameObj::SetStatus(_status);
+	if (e_Direction)
+	{
+		SetGradient(0, 0, 1, -1);
+	}
+	else
+	{
+		SetGradient(-1, 1, 0, 0);
+	}
 }
 
+//true - Vertical & False - Horizontal
 void SuzyRed::SetDirection(bool _direction)
 {
 	e_Direction = _direction;
+	e_PreviousMove = _direction;	//TRUE - MOVE UP & FALSE - MOVE DOWN
+	velocityX = e_Direction ? 0 : o_maxVelocityX;
+	velocityY = e_Direction ? o_maxVelocityY : 0;
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -43,18 +59,25 @@ void SuzyRed::SetDirection(bool _direction)
 //Update
 void SuzyRed::Update(float _delta)
 {
-	isAlive = (o_health <= 0) ? false : true;
+	//isAlive = (o_health <= 0) ? false : true;
 	if (isAlive)
 	{
-		e_delta = _delta; 
 		GameObj::Update(_delta);
-
-		if (status == SuzyStatus::SuzyNormal && e_WaitTimeToFly >= 1.0f)
+		if (e_OnWall)
 		{
-			//Set next velocity
-			e_NextVelocityX *= -1;
-			e_NextVelocityY *= -1;
+
+			e_WaitTimeToFly += _delta;
 		}
+		else
+		{
+			e_WaitTimeToFly = 0;
+		}
+
+		if (!IsLastFrame())
+		{
+			NextFrame();
+		}
+		
 	}
 	else
 	{
@@ -67,7 +90,8 @@ void SuzyRed::AIControl(float _targetX, float _targetY)
 {
 	if (status == SuzyStatus::SuzyNormal && e_WaitTimeToFly >= 1.0f)
 	{
-		Fly(e_Direction, true);
+		Fly(e_Direction, e_PreviousMove);
+		e_PreviousMove = !e_PreviousMove;
 	}
 }
 
@@ -78,12 +102,12 @@ void SuzyRed::CollisionProcess(GameObj* _obj, float _delta, float _collisonTime,
 	switch (type)
 	{
 	case o_TRANSPARENT:
-		if (_collisonTime < 1)
+		if (_collisonTime < 1 && status == SuzyStatus::SuzyAttack)
 		{
 			if (e_Direction)
 			{
-				//Horizontal
-				if (_normalX != 0 && status == SuzyStatus::SuzyAttack)
+				//vertical
+				if (_normalY != 0)
 				{
 					Slide(_obj, _delta, _collisonTime, _normalX, _normalY);
 					Stop();
@@ -91,14 +115,11 @@ void SuzyRed::CollisionProcess(GameObj* _obj, float _delta, float _collisonTime,
 			}
 			else
 			{
-				if (_normalY != 0)
+				//Horizontal
+				if (_normalX != 0)
 				{
-					//Horizontal
-					if (_normalX != 0 && status == SuzyStatus::SuzyAttack)
-					{
-						Slide(_obj, _delta, _collisonTime, _normalX, _normalY);
-						Stop();
-					}
+					Slide(_obj, _delta, _collisonTime, _normalX, _normalY);
+					Stop();
 				}
 			}
 		}
@@ -192,12 +213,12 @@ void SuzyRed::CollisionProcess(GameObj* _obj, float _delta, float _collisonTime,
 	case o_SUPERCUTTERPARENT:
 		break;
 	case o_BRICK:
-		if (_collisonTime < 1)
+		if (_collisonTime < 1 && status == SuzyStatus::SuzyAttack)
 		{
 			if (e_Direction)
 			{
-				//Horizontal
-				if (_normalX != 0 && status == SuzyStatus::SuzyAttack)
+				//vertical
+				if (_normalY != 0 )
 				{
 					Slide(_obj, _delta, _collisonTime, _normalX, _normalY);
 					Stop();
@@ -205,14 +226,11 @@ void SuzyRed::CollisionProcess(GameObj* _obj, float _delta, float _collisonTime,
 			}
 			else
 			{
-				if (_normalY != 0)
+				//horizontal
+				if (_normalX != 0)
 				{
-					//Horizontal
-					if (_normalX != 0 && status == SuzyStatus::SuzyAttack)
-					{
-						Slide(_obj, _delta, _collisonTime, _normalX, _normalY);
-						Stop();
-					}
+					Slide(_obj, _delta, _collisonTime, _normalX, _normalY);
+					Stop();
 				}
 			}
 		}
@@ -224,7 +242,7 @@ void SuzyRed::CollisionProcess(GameObj* _obj, float _delta, float _collisonTime,
 	case o_BULLET:
 		if (_collisonTime < 1)
 		{
-			o_health -= _obj->o_damage;
+			//o_health -= _obj->o_damage;
 		}
 		break;
 	case o_BOUNCINGMUSHROOMRED:
@@ -235,28 +253,26 @@ void SuzyRed::CollisionProcess(GameObj* _obj, float _delta, float _collisonTime,
 }
 
 //Fly
-//_direction value: true - horizontal & false - vertical
-void SuzyRed::Fly(bool _direction, bool _changeMove)
+//_direction value: true - vertical & false - horizontal
+//_preMove value:	true --> ^|^	& false - <-- down 
+void SuzyRed::Fly(bool _direction, bool _preMove)
 {
 	if (status != SuzyStatus::SuzyAttack)
 	{
 		if (_direction)
 		{
-			//Move Horizontal
-			velocityX = o_maxVelocityX;
-			velocityY = 0;
+			//Move Vertical
+			velocityX = 0;
+			velocityY = _preMove ? -o_maxVelocityY : o_maxVelocityY;
 		}
 		else
 		{
-			//Move Vertical
-			velocityX = 0;
-			velocityY = o_maxVelocityY;
+			//Move Horizontal
+			velocityX = _preMove ? o_maxVelocityX : -o_maxVelocityX;
+			velocityY = 0;
+			
 		}
-
-		e_NextVelocityX = velocityX;
-		e_NextVelocityY = velocityY;
-
-		e_WaitTimeToFly = 0.0f;
+		e_OnWall = false;
 		SetStatus(SuzyStatus::SuzyAttack);
 	}
 }
@@ -267,8 +283,6 @@ void SuzyRed::Stop()
 	if (status != SuzyStatus::SuzyNormal)
 	{
 		SetStatus(SuzyStatus::SuzyNormal);
-		velocityX = 0;
-		velocityY = 0;
-		e_WaitTimeToFly += e_delta;
+		e_OnWall = true;
 	}
 }
