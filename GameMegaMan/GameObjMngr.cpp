@@ -150,6 +150,9 @@ GameObj* GameObjMngr::CreateGameObject(GameObjectType type, float posX, float po
 	case o_BOUNCINGMUSHROOMRED:
 		obj = new BouncingMushroomRed();
 		break;
+	case o_SUPERCUTTERPARENT:
+		obj = new SuperCutterParent();
+		break;
 	default:
 		obj = new GameObj();
 		obj->objectType = type;

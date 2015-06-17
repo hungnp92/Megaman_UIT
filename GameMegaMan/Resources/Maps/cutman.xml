@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Map R="0" G="232" B="216" X="32" Y="96">
+<Map R="0" G="232" B="216" X="848" Y="1008">
   <GameObjects>
     <Object Id="0" Type="3" PosisionX="1288" PosisionY="2088" Width="16" Height="16" State="4" />
     <Object Id="1" Type="3" PosisionX="1304" PosisionY="2088" Width="16" Height="16" State="5" />
@@ -3623,6 +3623,8 @@
     <Object Id="3619" Type="33" PosisionX="152" PosisionY="88" Width="16" Height="16" State="1" />
     <Object Id="3620" Type="33" PosisionX="104" PosisionY="56" Width="16" Height="16" State="1" />
     <Object Id="3621" Type="33" PosisionX="88" PosisionY="152" Width="16" Height="16" State="0" />
+    <Object Id="3622" Type="44" PosisionX="208" PosisionY="136" Width="32" Height="16" State="0" />
+    <Object Id="3623" Type="11" PosisionX="1497" PosisionY="1995" Width="18" Height="21" State="0" />
   </GameObjects>
   <Nodes>
     <Node Id="0" X="0" Y="2144" Width="3344" Height="2144" />
@@ -3878,6 +3880,7 @@
       <ObjectId Id="3466" />
       <ObjectId Id="3468" />
       <ObjectId Id="3575" />
+      <ObjectId Id="3623" />
     </Node>
     <Node Id="0012" X="836" Y="1876" Width="418" Height="268" />
     <Node Id="0013" X="1254" Y="1876" Width="418" Height="268" />
@@ -7471,6 +7474,7 @@
       <ObjectId Id="3600" />
       <ObjectId Id="3615" />
       <ObjectId Id="3621" />
+      <ObjectId Id="3622" />
     </Node>
     <Node Id="02221" X="209" Y="268" Width="209" Height="134">
       <ObjectId Id="2941" />
@@ -7493,6 +7497,7 @@
       <ObjectId Id="3530" />
       <ObjectId Id="3547" />
       <ObjectId Id="3549" />
+      <ObjectId Id="3622" />
     </Node>
     <Node Id="02222" X="0" Y="134" Width="209" Height="134">
       <ObjectId Id="2929" />
@@ -7606,6 +7611,7 @@
       <ObjectId Id="3614" />
       <ObjectId Id="3619" />
       <ObjectId Id="3620" />
+      <ObjectId Id="3622" />
     </Node>
     <Node Id="02223" X="209" Y="134" Width="209" Height="134">
       <ObjectId Id="2941" />
@@ -7717,6 +7723,7 @@
       <ObjectId Id="3616" />
       <ObjectId Id="3617" />
       <ObjectId Id="3618" />
+      <ObjectId Id="3622" />
     </Node>
     <Node Id="0223" X="418" Y="268" Width="418" Height="268" />
     <Node Id="02230" X="418" Y="268" Width="209" Height="134">

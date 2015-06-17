@@ -32,6 +32,7 @@
 #include "ScrewDriverRed.h"
 #include "SniperJoe.h"
 #include "SuperCutter.h"
+#include "SuperCutterParent.h"
 #include "SuzyBlue.h"
 #include "SuzyOrange.h"
 #include "SuzyRed.h"

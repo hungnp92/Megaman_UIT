@@ -186,9 +186,6 @@
     <ClCompile Include="SuzyRed.cpp">
       <Filter>Source Files\GameObject\Enermy</Filter>
     </ClCompile>
-    <ClCompile Include="SuperCutter.cpp">
-      <Filter>Source Files\GameObject\Enermy</Filter>
-    </ClCompile>
     <ClCompile Include="SuzyBlue.cpp">
       <Filter>Source Files\GameObject\Enermy</Filter>
     </ClCompile>
@@ -284,6 +281,12 @@
     </ClCompile>
     <ClCompile Include="BouncingMushroomBlue.cpp">
       <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperCutterParent.cpp">
+      <Filter>Source Files\GameObject\Enermy</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperCutter.cpp">
+      <Filter>Source Files\GameObject\Bullet</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -392,9 +395,6 @@
     <ClInclude Include="SuzyBlue.h">
       <Filter>Header Files\GameObject\Enermy</Filter>
     </ClInclude>
-    <ClInclude Include="SuperCutter.h">
-      <Filter>Header Files\GameObject\Enermy</Filter>
-    </ClInclude>
     <ClInclude Include="SniperJoe.h">
       <Filter>Header Files\GameObject\Enermy</Filter>
     </ClInclude>
@@ -493,6 +493,12 @@
     </ClInclude>
     <ClInclude Include="BouncingMushroomRed.h">
       <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperCutterParent.h">
+      <Filter>Header Files\GameObject\Enermy</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperCutter.h">
+      <Filter>Header Files\GameObject\Bullet</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

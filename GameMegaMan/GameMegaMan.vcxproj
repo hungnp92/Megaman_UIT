@@ -146,6 +146,7 @@
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="StaticGameObj.cpp" />
     <ClCompile Include="SuperCutter.cpp" />
+    <ClCompile Include="SuperCutterParent.cpp" />
     <ClCompile Include="SuzyBlue.cpp" />
     <ClCompile Include="SuzyOrange.cpp" />
     <ClCompile Include="SuzyRed.cpp" />
@@ -218,6 +219,7 @@
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="StaticGameObj.h" />
     <ClInclude Include="SuperCutter.h" />
+    <ClInclude Include="SuperCutterParent.h" />
     <ClInclude Include="SuzyBlue.h" />
     <ClInclude Include="SuzyOrange.h" />
     <ClInclude Include="SuzyRed.h" />

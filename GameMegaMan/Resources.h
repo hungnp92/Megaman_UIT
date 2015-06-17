@@ -246,6 +246,7 @@ public:
 	Sprite* bOrange;
 	Sprite* bGreen;
 	Sprite* bRockman;
+	Sprite* bSuperCutter;
 
 
 	MyResources();

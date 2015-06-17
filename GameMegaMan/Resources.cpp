@@ -286,9 +286,9 @@ void MyResources::LoadResources()
 	sScrewDriverRed->LoadSprite(DxMngr::GetInstance().GetTextureFromBitmap("Resources/Images/enemies/ScrewDriverRed.png", NULL));
 	sScrewDriverRed->AddStatus(SpriteStatus(3, 16, 16, 0));
 
-	sSuperCutter = new Sprite();
-	sSuperCutter->LoadSprite(DxMngr::GetInstance().GetTextureFromBitmap("Resources/Images/enemies/SuperCutter.png", NULL));
-	sSuperCutter->AddStatus(SpriteStatus(2, 23, 20, 0));
+	bSuperCutter = new Sprite();
+	bSuperCutter->LoadSprite(DxMngr::GetInstance().GetTextureFromBitmap("Resources/Images/enemies/SuperCutter.png", NULL));
+	bSuperCutter->AddStatus(SpriteStatus(2, 23, 20, 0));
 
 	sKillerBombOrange = new Sprite();
 	sKillerBombOrange->LoadSprite(DxMngr::GetInstance().GetTextureFromBitmap("Resources/Images/enemies/KillerBombOrange.png", NULL));

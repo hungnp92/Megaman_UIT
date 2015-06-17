@@ -16,12 +16,15 @@ void PlayStage::Initialize(string _filename)
 	g_Map = new Map(_filename);
 	backColor = g_Map->backColor;
 	g_Rockman = new RockMan();
-	g_Rockman->positionX = g_Map->startPoint.x+170;
+	g_Rockman->positionX = g_Map->startPoint.x;
 	g_Rockman->positionY = g_Map->startPoint.y;
 	g_Rockman->RefreshBoundary();
 
 	ViewPort::GetInstance().SetDirection(g_Map->cameraDirection);
-	ViewPort::GetInstance().SetToDefault();
+	//768 - 1184
+		ViewPort::GetInstance().positionX = 768;
+	ViewPort::GetInstance().positionY = 1184;
+	//ViewPort::GetInstance().SetToDefault();
 }
 
 void PlayStage::Release()
@@ -62,6 +65,7 @@ void PlayStage::Update(float _delta)
 		g_CollideObjects = g_CurrentNode->GetColideObjects(rect);
 		g_DynamicObjects = g_CurrentNode->GetDynamicObjects(rect);
 
+		g_Rockman->positionX += 1;
 		UpdatePosision(_delta);
 		UpdateCollision(_delta);
 		AIControl();
